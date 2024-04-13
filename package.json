@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:migrate": "pgmg 'postgresql://localhost:5432/nuxt-sidebase-auth' 'migrations/*.mjs'"
+  },
+  "dependencies": {
+    "@auth/core": "^0.29.0",
+    "@sidebase/nuxt-auth": "^0.7.1",
+    "next-auth": "4.22.5",
+    "nuxt": "^3.11.2",
+    "postgres": "^3.4.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "pgmg": "^0.0.11"
+  }
+}
